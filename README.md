@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/gustavohfer/advice-generator](https://github.com/gustavohfer/advice-generator)
+- Solution URL: [https://www.frontendmentor.io/solutions/advice-generator-app-using-javascript-oBFDe5WfuX](https://www.frontendmentor.io/solutions/advice-generator-app-using-javascript-oBFDe5WfuX)
 - Live Site URL: [https://github.com/gustavohfer/advice-generator-app/deployments/github-pages](https://github.com/gustavohfer/advice-generator-app/deployments/github-pages)
 
 ## My process

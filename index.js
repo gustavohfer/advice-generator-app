@@ -11,15 +11,19 @@ async function getAdvice() {
 }
 
 async function generateAdvice() {
-    let newAdviceObj = await getAdvice();
-    let adviceId = await newAdviceObj.slip.id
-    let advice = await newAdviceObj.slip.advice
-
-    let adviceIdElem = document.getElementById('advice-id')
-    let adviceElem = document.getElementById('advice')
-
-    adviceIdElem.textContent = `ADVICE #${adviceId}`;
-    adviceElem.textContent = advice
+    try {
+        let newAdviceObj = await getAdvice();
+        let adviceId = await newAdviceObj.slip.id
+        let advice = await newAdviceObj.slip.advice
+    
+        let adviceIdElem = document.getElementById('advice-id')
+        let adviceElem = document.getElementById('advice')
+    
+        adviceIdElem.textContent = `ADVICE #${adviceId}`;
+        adviceElem.textContent = advice
+    } catch (error) {
+        alert('Unexpected error, please refresh the page or try again later.')
+    }
 }
 
 // on open
